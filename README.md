@@ -1,15 +1,28 @@
 # UAVCAN-for-STM32-Arduino
 
-For questions or issues please see forum discussion https://www.stm32duino.com/viewtopic.php?f=10&t=99
+![](./images/dronecan_capture.png)
 
-UAVCAN for STM32 Arduino is a simple UAVCAN libcanard (https://github.com/UAVCAN/libcanard) example for the Arduino IDE (https://www.arduino.cc/) running on STM32 development boards.
+## 개발 환경
+* HW
+    * NUCLEO-F103RB
+    * can transceiver(SN65HVD230)
+    * Zubax Babel
+* SW
+    * Arduino IDE
+    * [Dronecan GUI Tool](https://dronecan.github.io/GUI_Tool/Overview/)
 
-This example requires the use of Arduino STM32 core package (https://github.com/stm32duino/Arduino_Core_STM32).
+## 연결
+* NUCLEO-F103RB
 
-It has been tested on STM32F103C8 and STM32F303CC development boards, using Arduino IDE v1.8.5 with Arduino Core STM32 v1.8.  CAN bus commands were generated using UAVCAN GUI (https://uavcan.org/GUI_Tool/Overview/) v0.9.0 running on 64 bit Win 10.
+![](https://os.mbed.com/media/uploads/bcostm/nucleo_f103rb_2018_07_06_morpho_right.png)
 
-Libcanard example pictorial schematic:
-![Optional Text](https://raw.githubusercontent.com/geosmall/UAVCAN-for-STM32-Arduino/master/images/UAVCAN_NODE_libcanard_F3_ino.jpg)
+![](./images/cantranceiver.png)
+   * 전원 : 3.3V
+   * GND
+   * CAN_RX : PA_12 (CAN1_RD)
+   * CAN_TX : PA_11 (CAN1_TD)
+## Arduino IDE 설정
+* 
 
-Libcanard example running on UAVCAN GUI:
-![Optional Text](https://raw.githubusercontent.com/geosmall/UAVCAN-for-STM32-Arduino/master/images/Screen_Capture.png)
+
+
