@@ -36,3 +36,6 @@
 ## Arduino 소스코드 열기 및 빌드
 * File -> Open -> libcanard_example 폴더 열기 -> libcanard_example.ino 파일 열기
 * 'Verify' 버튼, 'Upload' 버튼
+
+## DronCAN UI 실행
+* [실행방법](https://docs.google.com/presentation/d/1F0mcgBMCBcQ-Jt6NjcJWr5dj76pB9ITjcTlpEsEOJIc/edit#slide=id.p)
