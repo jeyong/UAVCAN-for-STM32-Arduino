@@ -21,8 +21,18 @@
    * GND
    * CAN_RX : PA_12 (CAN1_RD)
    * CAN_TX : PA_11 (CAN1_TD)
-## Arduino IDE 설정
-* 
+## Arduino IDE 설정 (Windows 10 및 Linux)
 
+* File -> Preference -> "Additional Boards Managers URLs" -> https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+* Tools -> Boards -> Boards Manager -> STM32 MCU based boards -> Install
+* Tools -> Boards -> STM32 MCU based board -> Nucleo-64
+* Tools -> Boards -> Board part number: -> Nucleo-F103RB
+* Tools -> Port -> '아두이노가 연결된 Port 선택(장치관리자에서 확인)'
 
+* STM32CubeProgrammer install
+  * [STM32Cube Program](https://www.st.com/en/development-tools/stm32cubeprog.html)
+    * zip 다운 받은 후에 압축 풀고 실행
 
+## Arduino 소스코드 열기 및 빌드
+* File -> Open -> libcanard_example 폴더 열기 -> libcanard_example.ino 파일 열기
+* 'Verify' 버튼, 'Upload' 버튼
