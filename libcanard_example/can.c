@@ -14,7 +14,6 @@ void CAN_HW_Init(void) {
   // PA11     ------> CAN_RX
   // PA12     ------> CAN_TX 
 
-#if defined (STM32F103x6) || defined (STM32F103xB)
   GPIO_InitStruct.Pin = GPIO_PIN_11;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -24,15 +23,5 @@ void CAN_HW_Init(void) {
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-#elif defined (STM32F303x8) || defined (STM32F303xC) || defined (STM32F303xE)
-  GPIO_InitStruct.Pin = GPIO_PIN_11 | GPIO_PIN_12;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF9_CAN;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-#else
-#error "Warning untested processor variant"
-#endif
 
 }
