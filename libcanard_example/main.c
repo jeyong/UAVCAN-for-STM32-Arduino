@@ -13,7 +13,7 @@ void setup() {
   printInitMsg();
   println();
 
-  // initialize digital pins
+  // digital pin 초기화
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(PwmOutputPin, OUTPUT);
   pinMode(TestOutputPin, OUTPUT);
@@ -22,8 +22,10 @@ void setup() {
 
 //  uint32_t ret = DWT_Delay_Init();
 
+  // STM32 CAN 초기화
   CAN_HW_Init();
 
+  // uavcan 초기화
   uavcanInit();
 
 }

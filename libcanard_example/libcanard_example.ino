@@ -1,4 +1,5 @@
 //#include "stm32yyxx_ll.h"
+// 아두이노에서 ino 파일을 열기가 되므로 이 프로젝트를 위한 파일
 
 #define RC_NUM_CHANNELS_TO_PRINT    4
 

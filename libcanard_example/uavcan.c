@@ -83,7 +83,7 @@ void getNodeInfoHandleCanard(CanardRxTransfer* transfer)
 
 }
 
-
+//uavcan 초기화
 void uavcanInit(void)
 {
 
@@ -139,6 +139,7 @@ void receiveCanard(void)
 
 }
 
+// status data 전송
 void spinCanard(void)
 {  
 
@@ -163,7 +164,7 @@ void spinCanard(void)
     
 }
 
-
+// debug keyvalue 전송
 void publishCanard(void)
 {  
 
